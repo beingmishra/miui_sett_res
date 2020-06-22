@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:scrollableView="@id/id_settings_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/id_settings_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@id/id_focus_bg"
+            android:focusable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_focus_settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:textSize="@dimen/usage_stats_focus_summary_text_size"
+            android:textColor="@color/usage_stats_focus_tip"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:text="@string/usage_state_focus_weak_summary"
+            android:fontFamily="mipro-demibold"
+            android:textFontWeight="500" />
+        <TextView
+            android:textSize="14.0dip"
+            android:textColor="@color/usage_stats_focus_summary"
+            android:gravity="center_horizontal"
+            android:id="@id/id_summary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/usage_focus_home_text_margin"
+            android:text="@string/usage_state_focus_warning_text" />
+        <Space
+            android:background="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+        <com.xiaomi.misettings.usagestats.home.widget.CustomRecycleView
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@id/timer_select_recycler_view"
+            android:clipToPadding="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55.0dip" />
+        <TextView
+            android:textSize="12.669983dip"
+            android:textColor="@color/usage_focus_time_select_bg"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/id_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/usage_focus_experience_margin_bottom"
+            android:text="@string/usage_stats_experience_text"
+            android:fontFamily="mipro-medium" />
+        <TextView
+            android:textSize="16.0dip"
+            android:textColor="@color/usage_stats_show_tips_value_text_color"
+            android:gravity="center"
+            android:id="@id/id_btn_confirm"
+            android:background="@drawable/bg_focus_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="50.899994dip"
+            android:layout_marginBottom="@dimen/usage_focus_start_btn_margin_bottom"
+            android:text="@string/usage_state_open_focus_mode"
+            android:fontFamily="mipro-medium"
+            android:layout_marginStart="29.089996dip"
+            android:layout_marginEnd="29.089996dip" />
+    </LinearLayout>
+</com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout>

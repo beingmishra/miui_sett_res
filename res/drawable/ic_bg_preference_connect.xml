@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/shape_preference_disconnected">
+        <shape
+            android:shape="rectangle">
+            <solid
+                android:color="@color/connect_preference_bg_disconnected_color" />
+            <corners
+                android:radius="@dimen/high_light_radius" />
+        </shape>
+    </item>
+    <item
+        android:id="@id/anim_preference_connecting">
+        <animated-vector
+            android:drawable="@drawable/ic_preference_connecting_translation">
+            <target
+                android:name="animgroup"
+                android:animation="@animator/anim_connecting" />
+        </animated-vector>
+    </item>
+    <item
+        android:id="@id/shape_preference_connected">
+        <shape
+            android:shape="rectangle">
+            <solid
+                android:color="@color/connect_preference_bg_connected_color" />
+            <corners
+                android:radius="@dimen/high_light_radius" />
+        </shape>
+    </item>
+</layer-list>

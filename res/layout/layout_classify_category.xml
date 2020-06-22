@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    android:background="@color/usage_stats_white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="58.179993dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/id_select_bg"
+        android:background="@color/usage_new_classify_selected_color"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.0" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/id_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingStart="@dimen/usage_new_home_main_margin_start"
+        android:paddingEnd="@dimen/usage_new_home_main_margin_start">
+        <TextView
+            android:textSize="18.179993sp"
+            android:textColor="@color/usage_category_item_name_text_color"
+            android:ellipsize="end"
+            android:id="@id/id_main_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:fontFamily="mipro-medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:textSize="18.179993sp"
+            android:textColor="@color/usage_category_item_name_text_color"
+            android:id="@id/id_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="mipro-medium"
+            android:layout_marginStart="4.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/id_main_name"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@id/id_arrow"
+            android:layout_width="29.0dip"
+            android:layout_height="29.0dip"
+            android:src="@drawable/ic_classify_category_arrow"
+            android:transformPivotX="14.5dip"
+            android:transformPivotY="14.5dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/sms_sound_layout"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/coolsound_sms_margin_bottom"
+    android:paddingStart="@dimen/coolsound_tab_margin"
+    android:paddingEnd="@dimen/coolsound_tab_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <include
+        layout="@layout/split" />
+    <TextView
+        android:textSize="13.0sp"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="36.399994dip"
+        android:text="@string/application_sound" />
+    <com.android.settings.coolsound.widget.MiuiSmsRingtoneItem
+        android:id="@id/sms_sound_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        settings:layout="@layout/sms_sound_item" />
+</LinearLayout>

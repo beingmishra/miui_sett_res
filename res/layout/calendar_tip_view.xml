@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:textAppearance=""
+    android:textSize="13.799988sp"
+    android:ellipsize="end"
+    android:gravity="center_horizontal"
+    android:id="@id/calendar_tip_item"
+    android:focusable="true"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24.149994dip"
+    android:layout_marginBottom="29.799988dip"
+    android:text="@string/calendar_tip"
+    android:maxLines="2"
+    android:layout_marginStart="@dimen/coolsound_tab_margin"
+    android:layout_marginEnd="@dimen/coolsound_tab_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

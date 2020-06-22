@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="36.359985dip"
+    android:width="36.359985dip"
+    android:viewportWidth="100.0"
+    android:viewportHeight="100.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="@color/usage_stats_black80"
+        android:pathData="M55.5,30L70.5,30A2.5,2.5 0,0 1,73 32.5L73,32.5A2.5,2.5 0,0 1,70.5 35L55.5,35A2.5,2.5 0,0 1,53 32.5L53,32.5A2.5,2.5 0,0 1,55.5 30z" />
+    <path
+        android:fillColor="@color/usage_stats_black80"
+        android:pathData="M55.5,54L70.5,54A2.5,2.5 0,0 1,73 56.5L73,56.5A2.5,2.5 0,0 1,70.5 59L55.5,59A2.5,2.5 0,0 1,53 56.5L53,56.5A2.5,2.5 0,0 1,55.5 54z" />
+    <path
+        android:fillColor="@color/usage_stats_black80"
+        android:pathData="M55.5,41L70.5,41A2.5,2.5 0,0 1,73 43.5L73,43.5A2.5,2.5 0,0 1,70.5 46L55.5,46A2.5,2.5 0,0 1,53 43.5L53,43.5A2.5,2.5 0,0 1,55.5 41z" />
+    <path
+        android:fillColor="@color/usage_stats_black80"
+        android:pathData="M55.5,65L70.5,65A2.5,2.5 0,0 1,73 67.5L73,67.5A2.5,2.5 0,0 1,70.5 70L55.5,70A2.5,2.5 0,0 1,53 67.5L53,67.5A2.5,2.5 0,0 1,55.5 65z" />
+    <group>
+        <clip-path
+            android:pathData="M31,28L43,28A4,4 0,0 1,47 32L47,44A4,4 0,0 1,43 48L31,48A4,4 0,0 1,27 44L27,32A4,4 0,0 1,31 28z M 0,0" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M31,28L43,28A4,4 0,0 1,47 32L47,44A4,4 0,0 1,43 48L31,48A4,4 0,0 1,27 44L27,32A4,4 0,0 1,31 28z"
+            android:strokeColor="@color/usage_stats_black80"
+            android:strokeWidth="10.0" />
+    </group>
+    <group>
+        <clip-path
+            android:pathData="M31,52L43,52A4,4 0,0 1,47 56L47,68A4,4 0,0 1,43 72L31,72A4,4 0,0 1,27 68L27,56A4,4 0,0 1,31 52z M 0,0" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M31,52L43,52A4,4 0,0 1,47 56L47,68A4,4 0,0 1,43 72L31,72A4,4 0,0 1,27 68L27,56A4,4 0,0 1,31 52z"
+            android:strokeColor="@color/usage_stats_black80"
+            android:strokeWidth="10.0" />
+    </group>
+</vector>

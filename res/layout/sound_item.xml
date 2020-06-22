@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/ringtone_item"
+    android:padding="@dimen/coolsound_item_padding"
+    android:layout_width="@dimen/coolsound_video_width"
+    android:layout_height="@dimen/coolsound_video_height"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:cardCornerRadius="@dimen/coolsound_item_corner"
+        app:cardElevation="0.0dip">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <VideoView
+                android:id="@id/vv_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:importantForAccessibility="no"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+            <ImageView
+                android:id="@id/img_item"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:textSize="16.699982sp"
+                android:textColor="@color/color_tv"
+                android:ellipsize="end"
+                android:id="@android:id/summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/coolsound_title_margin"
+                android:maxWidth="@dimen/coolsound_txt_max_width"
+                android:maxLines="1"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true" />
+            <com.android.settings.coolsound.widget.PlayView
+                android:id="@id/play_view"
+                android:visibility="gone"
+                android:layout_width="@dimen/play_view_width"
+                android:layout_height="@dimen/play_view_height"
+                android:layout_marginTop="15.599976dip"
+                android:layout_marginEnd="18.899994dip"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:textSize="12.0sp"
+                android:textColor="@color/color_tv"
+                android:gravity="center"
+                android:id="@id/more_ringtone"
+                android:background="@drawable/shape_more_bg"
+                android:paddingTop="3.0dip"
+                android:paddingBottom="3.0dip"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/more_ringtone"
+                android:paddingStart="6.0dip"
+                android:paddingEnd="6.0dip"
+                android:layout_marginEnd="10.0dip"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout
+    android:id="@id/id_spring_back"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:scrollOrientation="vertical"
+    app:scrollableView="@id/id_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/id_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <FrameLayout
+            android:layout_gravity="center_vertical"
+            android:id="@id/id_indicator_container"
+            android:layout_width="fill_parent"
+            android:layout_height="55.26999dip"
+            android:layout_marginStart="25.449982dip"
+            android:layout_marginEnd="25.449982dip">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/id_select_bg_container"
+                android:background="@drawable/new_home_item_bg"
+                android:padding="@dimen/usage_new_home_indicator_padding"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/usage_new_home_indicator_height">
+                <View
+                    android:id="@id/id_selected_bg"
+                    android:background="@drawable/new_home_indicator_selected_item"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+                <Space
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/usage_new_home_indicator_height">
+                <TextView
+                    android:textSize="14.539978sp"
+                    android:textColor="@color/usage_new_home_indicator_text_color"
+                    android:gravity="center"
+                    android:id="@id/id_tab1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="@string/usage_new_home_day_title"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="14.539978sp"
+                    android:textColor="@color/usage_new_home_indicator_text_color"
+                    android:gravity="center"
+                    android:id="@id/id_tab2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="@string/usage_new_home_week_title"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@id/id_fragment_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</com.xiaomi.misettings.usagestats.home.widget.ContentSpringBackLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="110.0dip"
+    android:width="110.0dip"
+    android:viewportWidth="110.0"
+    android:viewportHeight="110.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,0h110v110h-110z" />
+    <path
+        android:fillColor="#fffafafa"
+        android:pathData="M24,0.5L86,0.5A23.5,23.5 0,0 1,109.5 24L109.5,86A23.5,23.5 0,0 1,86 109.5L24,109.5A23.5,23.5 0,0 1,0.5 86L0.5,24A23.5,23.5 0,0 1,24 0.5z"
+        android:strokeColor="#ffeeeeee"
+        android:strokeWidth="1.0" />
+    <path
+        android:fillColor="@drawable/$ic_usagestats_app_category_miui_sport__0"
+        android:pathData="M32.299,33.822C43.795,22.318 61.752,21.636 72.408,32.298C83.063,42.96 82.381,60.929 70.884,72.433C60.574,82.75 45.067,84.363 34.291,76.895L27.542,83.649C26.266,84.929 24.194,84.929 22.915,83.652V83.649L21.45,82.182C20.174,80.903 20.174,78.832 21.45,77.552L28.138,70.86C20.336,60.064 21.854,44.274 32.299,33.822Z"
+        android:fillType="evenOdd" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M56.159,30.95C54.571,30.8 52.94,30.845 51.293,31.106C48.837,31.496 46.563,32.33 44.539,33.515"
+        android:strokeColor="#ffffffff"
+        android:strokeWidth="5.0"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.8"
+        android:fillAlpha="0.8" />
+    <path
+        android:fillColor="#ff9242ff"
+        android:pathData="M78.694,73.583C85.039,73.583 90.182,68.437 90.182,62.088C90.182,55.739 85.039,50.592 78.694,50.592C72.349,50.592 67.206,55.739 67.206,62.088C67.206,68.437 72.349,73.583 78.694,73.583Z"
+        android:fillAlpha="0.65" />
+</vector>

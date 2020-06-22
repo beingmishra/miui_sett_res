@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/anti_flicker_mode_categroy"
+        android:key="mode_category">
+        <miuix.preference.RadioSetPreferenceCategory>
+            <miuix.preference.RadioButtonPreference
+                android:title="@string/normal_mode"
+                android:key="normal_mode"
+                android:summary="@string/normal_mode_summary" />
+        </miuix.preference.RadioSetPreferenceCategory>
+        <miuix.preference.RadioSetPreferenceCategory>
+            <miuix.preference.RadioButtonPreference
+                android:title="@string/anti_flicker_mode"
+                android:key="anti_flicker_mode"
+                android:summary="@string/anti_flicker_mode_summary" />
+        </miuix.preference.RadioSetPreferenceCategory>
+    </PreferenceCategory>
+</PreferenceScreen>

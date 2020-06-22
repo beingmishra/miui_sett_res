@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    android:sharedUserId="android.uid.system"
+    android:versionCode="200520012"
+    android:versionName="2.8.6.2"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    coreApp="true"
+    package="com.xiaomi.misettings"
+    platformBuildVersionCode="200520012"
+    platformBuildVersionName="2.8.6.2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission
+        android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission
+        android:name="android.permission.OBSERVE_APP_USAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.MANAGE_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="com.android.settings.permission.READ_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission
+        android:name="android.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="com.xiaomi.mi_connect_service.permission.BRING_UP_SERVICE" />
+    <permission
+        android:label="@string/app_name"
+        android:name="com.xiaomi.misettings.screentime"
+        android:protectionLevel="normal" />
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <protected-broadcast
+        android:name="com.xiaomi.action.ELDERLY_MODE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+    <application
+        android:theme="@style/Theme.MiSettings"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher_new"
+        android:name="com.xiaomi.misettings.Application"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:appComponentFactory="lottie">
+        <activity
+            android:theme="@style/ActivityRoot"
+            android:label="@string/more_settings"
+            android:name="com.xiaomi.misettings.usagestats.ui.NewAppCategoryListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action
+                    android:name="miui.action.usagestas.NEW_APP_CATEGORY_LIST" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label=""
+            android:name="com.android.settings.coolsound.CoolSoundPhoneActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action
+                    android:name="miui.intent.action.COOL_SOUND_PHONE" />
+                <action
+                    android:name="miui.intent.action.COOL_SOUND_PHONE_SEARCH" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.xiaomi.misettings.usagestats.DeviceTimeoverActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:resizeableActivity="false">
+            <intent-filter
+                android:priority="1">
+                <action
+                    android:name="miui.intent.action.USAGE_STATS_DEVICE_TIMEOVER" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@269287608"
+            android:name="com.xiaomi.misettings.usagestats.TimeoverActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:resizeableActivity="false">
+            <intent-filter
+                android:priority="1">
+                <action
+                    android:name="miui.intent.action.USAGE_STATS_TIMEOVER" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="com.xiaomi.misettings.usagestats.focusmode.FocusModeTimingActivity"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action
+                    android:name="miui.intent.action.FOCUS_MODE_TIMING" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="com.xiaomi.misettings.usagestats.focusmode.FocusModeActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:resizeableActivity="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action
+                    android:name="miui.intent.action.FOCUS_MODE" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.xiaomi.misettings.usagestats.focusmode.service.FocusModeForeBackGroundMonitorService"
+            android:directBootAware="true" />
+        <service
+            android:label="@string/app_name"
+            android:name="com.xiaomi.misettings.usagestats.focusmode.service.LRAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:directBootAware="true">
+            <intent-filter>
+                <action
+                    android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+        <activity
+            android:theme="@style/Theme.MiSettings"
+            android:name="com.xiaomi.misettings.usagestats.UsageAppDetailActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:resizeableActivity="false">
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.xiaomi.misettings.usagestats.ui.NewAppUsageDetailFragment" />
+        </activity>
+        <activity
+            android:theme="@style/Theme.MiSettings"
+            android:name="com.xiaomi.misettings.usagestats.UsageStatsTimeSetActivity"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action
+                    android:name="misettings.android.action.USAGE_TIME_SET" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.xiaomi.misettings.usagestats.devicelimit.DeviceLimitSettings" />
+        </activity>
+        <activity
+            android:theme="@style/Theme.MiSettings"
+            android:name="com.xiaomi.misettings.usagestats.focusmode.FocusModeFinishActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.xiaomi.misettings.usagestats.focusmode.FocusModeFinishFragment" />
+        </activity>
+        <activity
+            android:theme="@style/Theme.MiSettings"
+            android:name="com.xiaomi.misettings.usagestats.focusmode.FocusSettingsActivity"
+            android:permission="miui.misetings.permission.FOCUS_MODE"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action
+                    android:name="miui.intent.action.FOCUS_MODE_SETTINGS" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.xiaomi.misettings.usagestats.focusmode.FocusSettingsFragment" />
+        </activity>
+        <activity
+            android:theme="@style/ActivityRoot"
+            android:name="com.xiaomi.misettings.usagestats.UsageStatsMainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+                <data
+                    android:scheme="screentime"
+                    android:host="misettings.screentime"
+                    android:pathPrefix="/list" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="miui.action.usagestas.MAIN" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/ActivityRoot"
+            android:name="com.xiaomi.misettings.usagestats.home.ui.NewSubSettings"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:resizeableActivity="false" />
+        <service
+            android:name="com.xiaomi.misettings.usagestats.home.service.FetchAppNameService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <service
+            android:name="org.hapjs.features.channel.ChannelService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="org.hapjs.features.channel.action.BIND" />
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/Theme.MiSettings"
+            android:label=" "
+            android:name="com.xiaomi.misettings.usagestats.weeklyreport.WeeklyReportActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:resizeableActivity="false" />
+        <activity
+            android:theme="@style/Theme.MiSettings"
+            android:name="com.xiaomi.misettings.usagestats.ui.AppCategoryListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:resizeableActivity="false" />
+        <service
+            android:name="com.xiaomi.misettings.usagestats.controller.DeviceUsageMonitorService"
+            android:exported="false" />
+        <service
+            android:name="com.xiaomi.misettings.usagestats.devicelimit.DeviceLimitMonitorService"
+            android:exported="false" />
+        <service
+            android:name="com.xiaomi.misettings.usagestats.devicelimit.DeviceLimitProlongAppService"
+            android:exported="false" />
+        <service
+            android:name="com.xiaomi.misettings.usagestats.controller.AppLimitService"
+            android:exported="false"
+            android:process=":remote" />
+        <service
+            android:name="com.xiaomi.misettings.usagestats.UsageCacheService"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="miui.settings.action.LOAD_USAGE_DATA" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.xiaomi.misettings.usagestats.UploadDataService"
+            android:exported="false" />
+        <receiver
+            android:name="com.xiaomi.misettings.usagestats.AppTimerReceiver"
+            android:directBootAware="true">
+            <intent-filter
+                android:priority="999">
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+                <action
+                    android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action
+                    android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="miui.intent.action.settings.SCHEDULE_DEVICE_USAGE_MONITOR" />
+                <action
+                    android:name="miui.intent.action.settings.SCHEDULE_APP_LIMIT" />
+                <action
+                    android:name="miui.intent.action.settings.SCHEDULE_PROLONG_LIMIT_TIME" />
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+                <action
+                    android:name="miui.settings.action.PRELOAD_YESTERDAY" />
+                <action
+                    android:name="misettings.action.FOCUS_MODE_SHARE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+                <action
+                    android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="miui.android.intent.action.SCREEN_OFF" />
+                <action
+                    android:name="miui.android.intent.action.SCREEN_ON" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="miui.settings.action.NOTIFY" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.settings.ThemeUpgradeReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/Theme.Ringtone"
+            android:label="@string/mms"
+            android:name="com.android.settings.MultiSimRingtoneActivity" />
+        <provider
+            android:name="com.xiaomi.misettings.usagestats.dataprovider.ScreenTimeContentProvider"
+            android:permission="com.xiaomi.misettings.screentime"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.xiaomi.misettings.usagestats.screentimecontentprovider" />
+        <provider
+            android:name="com.xiaomi.misettings.MiSettingsSearchProvider"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="com.xiaomi.misettings.MiSettingsSearchProvider"
+            android:grantUriPermissions="true">
+            <intent-filter>
+                <action
+                    android:name="miui.intent.action.SETTINGS_SEARCH_PROVIDER" />
+            </intent-filter>
+        </provider>
+        <provider
+            android:name="com.xiaomi.misettings.usagestats.provider.CompatFileProvider"
+            android:exported="false"
+            android:authorities="com.xiaomi.misettings.FileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="com.xiaomi.misettings.usagestats.focusmode.data.TimerContentProvider"
+            android:exported="true"
+            android:authorities="com.xiaomi.misettings.usagestats.focusmode.data.TimerContentProvider" />
+        <uses-library
+            android:name="com.miui.okhttp" />
+        <activity
+            android:theme="@style/Theme.ExpertTheme"
+            android:label="@string/advanced_mode"
+            android:name="com.xiaomi.misettings.display.ScreenExpertActivity"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action
+                    android:name="miui.intent.action.SCREEN_EXPERT" />
+                <action
+                    android:name="miui.intent.action.SCREEN_EXPERT_SEARCH" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/screen_fps_title"
+            android:name="com.xiaomi.misettings.display.RefreshRate.RefreshRateActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action
+                    android:name="miui.intent.action.SCREEN_REFRESH" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.ExpertTheme"
+            android:label="@string/anti_flicker_title"
+            android:name="com.xiaomi.misettings.display.AntiFlickerMode.AntiFlickerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action
+                    android:name="miui.intent.action.ANTI_FLICKER" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/title_activity_easy_mode"
+            android:name="com.xiaomi.easymode.EasyModeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:supportsRtl="true"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action
+                    android:name="com.xiaomi.action.ENTER_ELDERLY_MODE" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.xiaomi.easymode.EasyModeFragment" />
+        </activity>
+        <meta-data
+            android:name="nestedheader"
+            android:value="1.0" />
+        <meta-data
+            android:name="recyclerview"
+            android:value="1.0" />
+        <meta-data
+            android:name="recyclerview_animator"
+            android:value="1.0" />
+        <meta-data
+            android:name="folme"
+            android:value="1.0" />
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+        <activity
+            android:label=" "
+            android:name="com.misettings.common.base.SubSettings"
+            android:taskAffinity="com.android.settings"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:resizeableActivity="false" />
+        <meta-data
+            android:name="nest"
+            android:value="1.0" />
+        <activity
+            android:theme="@style/Theme.Transparent"
+            android:name="org.hapjs.features.channel.transparentactivity.TransparentActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action
+                    android:name="org.hapjs.features.channel.action.LAUNCH_APP" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="core"
+            android:value="1.0" />
+        <meta-data
+            android:name="spring"
+            android:value="1.0" />
+        <meta-data
+            android:name="animation"
+            android:value="1.0" />
+        <meta-data
+            android:name="dynamicoverscroller"
+            android:value="1.0" />
+    </application>
+</manifest>

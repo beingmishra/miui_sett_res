@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.springback.view.SpringBackLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:scrollableView="@id/scrollview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/id_night_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/fps_choose_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17.449982dip"
+                android:layout_marginStart="13.089996dip"
+                android:layout_marginEnd="13.089996dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</miuix.springback.view.SpringBackLayout>

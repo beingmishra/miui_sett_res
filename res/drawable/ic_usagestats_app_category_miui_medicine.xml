@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="110.0dip"
+    android:width="110.0dip"
+    android:viewportWidth="110.0"
+    android:viewportHeight="110.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,0h110v110h-110z" />
+    <path
+        android:fillColor="#fffafafa"
+        android:pathData="M24,0.5L86,0.5A23.5,23.5 0,0 1,109.5 24L109.5,86A23.5,23.5 0,0 1,86 109.5L24,109.5A23.5,23.5 0,0 1,0.5 86L0.5,24A23.5,23.5 0,0 1,24 0.5z"
+        android:strokeColor="#ffeeeeee"
+        android:strokeWidth="1.0" />
+    <path
+        android:fillColor="@drawable/$ic_usagestats_app_category_miui_medicine__0"
+        android:pathData="M81.35,60.446L54.146,33.242C46.914,26.01 35.188,26.01 27.956,33.242C20.724,40.474 20.724,52.2 27.956,59.432L53.439,84.915C54.389,85.865 55.931,85.865 56.881,84.915L81.35,60.446Z"
+        android:strokeColor="@drawable/$ic_usagestats_app_category_miui_medicine__1"
+        android:strokeWidth="2.0"
+        android:fillType="evenOdd" />
+    <path
+        android:fillColor="@drawable/$ic_usagestats_app_category_miui_medicine__2"
+        android:pathData="M69.306,65.766C79.981,65.766 88.636,57.112 88.636,46.436C88.636,35.761 79.981,27.106 69.306,27.106C58.63,27.106 49.976,35.761 49.976,46.436C49.976,57.112 58.63,65.766 69.306,65.766Z"
+        android:fillAlpha="0.98" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M44.588,32.645C43.737,32.532 42.866,32.488 41.979,32.519C40.648,32.566 39.361,32.778 38.139,33.135"
+        android:strokeColor="#ffffffff"
+        android:strokeWidth="4.0"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.8"
+        android:fillAlpha="0.8" />
+</vector>

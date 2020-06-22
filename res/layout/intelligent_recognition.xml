@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings.coolsound.widget.IntelligentLayout
+    android:orientation="vertical"
+    android:id="@id/intelligent_recognition_layout"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/coolsound_tab_margin"
+    android:paddingEnd="@dimen/coolsound_tab_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        layout="@layout/split" />
+    <androidx.cardview.widget.CardView
+        android:id="@id/intelligent_recognition_card"
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/intelligent_recognition_item_title"
+        app:cardCornerRadius="@dimen/coolsound_item_corner"
+        app:cardElevation="0.0dip">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <VideoView
+                android:id="@id/intelligent_recognition_vv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@id/intelligent_recognition_img"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true" />
+            <com.android.settings.coolsound.widget.PlayButton
+                android:id="@id/intelligent_recognition_btn"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <include
+        layout="@layout/intelligent_recognition_item" />
+</com.android.settings.coolsound.widget.IntelligentLayout>

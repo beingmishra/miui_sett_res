@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space
+        android:background="@android:color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_round_button_margin_start" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@id/id_cycle_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/focus_data_list_cycle" />
+        <TextView
+            android:textSize="12.0sp"
+            android:textColor="@color/usage_stats_black50"
+            android:id="@id/id_focus_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/usage_focus_data_cycle_right" />
+    </LinearLayout>
+    <Space
+        android:background="@android:color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_round_button_margin_start" />
+</LinearLayout>

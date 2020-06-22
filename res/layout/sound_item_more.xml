@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/ringtone_item"
+    android:padding="@dimen/coolsound_item_padding"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView
+        android:id="@id/vv_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@id/img_item"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@id/more_rintone_layout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14.899994dip"
+            android:src="@drawable/more_ringtone" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@color/color_tv"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_ringtone" />
+    </LinearLayout>
+    <TextView
+        android:textSize="16.0sp"
+        android:textColor="@color/color_tv"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@android:id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/coolsound_title_margin"
+        android:maxWidth="@dimen/coolsound_txt_max_width"
+        android:maxLines="1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:textSize="14.0sp"
+        android:textColor="@color/color_tv"
+        android:gravity="center"
+        android:id="@id/more_ringtone"
+        android:background="@drawable/shape_more_bg"
+        android:paddingTop="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:text="@string/more_ringtone"
+        android:paddingStart="9.0dip"
+        android:paddingEnd="9.0dip"
+        android:layout_marginEnd="12.0dip"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.springback.view.SpringBackLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:scrollableView="@id/scrollview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@id/low_bright_preview"
+                    android:layout_width="167.29999dip"
+                    android:layout_height="345.79688dip"
+                    android:layout_marginTop="21.799988dip"
+                    android:src="@drawable/anti_flicker_off"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:textSize="13.799988sp"
+                    android:textColor="@color/normal_summary_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.899994dip"
+                    android:layout_marginBottom="21.799988dip"
+                    android:text="@string/low_light_preview"
+                    android:layout_below="@id/low_bright_preview"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <FrameLayout
+                android:id="@id/prefs_contain"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</miuix.springback.view.SpringBackLayout>

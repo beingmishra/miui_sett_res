@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="last_several_days">
+        <item quantity="other">Kwanaki %d</item>
+        <item quantity="one">Kwana %d</item>
+    </plurals>
+    <plurals name="steady_on_screen_notification_summary">
+        <item quantity="other">"Ka yi amfani da na'urarka ma mintoci %d ba tare da katsewa ba"</item>
+        <item quantity="one">"Ka yi amfani da na'urarka ma minti %d ba tare da katsewa ba"</item>
+    </plurals>
+    <plurals name="steady_on_screen_time_pick">
+        <item quantity="other">min %d</item>
+        <item quantity="one">min %d</item>
+    </plurals>
+    <plurals name="trend_from_last_several_day_equal">
+        <item quantity="other">Lokacin aikin allo na daidai da aikin matsakaici na kwanaki-%d</item>
+        <item quantity="one">Lokacin aikin allo na daidai da aikin matsakaici na kwana-%d</item>
+    </plurals>
+    <plurals name="trend_from_last_several_day_less">
+        <item quantity="other">%2$s kasa da lokacin aikin allo matsakaici na kwanaki - %1$d</item>
+        <item quantity="one">%2$s kasa da lokacin aikin allo matsakaici na kwanaki - %1$d</item>
+    </plurals>
+    <plurals name="trend_from_last_several_day_more">
+        <item quantity="other">%2$s fiye da lokacin aikin allo matsakaici na kwanaki - %1$d</item>
+        <item quantity="one">%2$s fiye da lokacin aikin allo matsakaici na kwana - %1$d</item>
+    </plurals>
+    <plurals name="unlock_times">
+        <item quantity="other">sau %.2f</item>
+        <item quantity="one">sau %.2f</item>
+    </plurals>
+    <plurals name="usage_days">
+        <item quantity="other">Kwanaki %d</item>
+        <item quantity="one">Kwana %d</item>
+    </plurals>
+    <plurals name="usage_new_home_avg_unlockc">
+        <item quantity="other">Sau %.2f a rana a masakaici</item>
+        <item quantity="one">Sau %.2f a rana a masakaici</item>
+    </plurals>
+    <plurals name="usage_new_home_total_unlocks">
+        <item quantity="other">An bude sau %d</item>
+        <item quantity="one">An bude sau %d</item>
+    </plurals>
+    <plurals name="usage_new_home_total_unlocks_new">
+        <item quantity="other">An bude sau %1$d a %2$s</item>
+        <item quantity="one">An bude sau %1$d a %2$s</item>
+    </plurals>
+    <plurals name="usage_new_home_total_week_unlocks">
+        <item quantity="other">An bude sau %d</item>
+        <item quantity="one">An bude sau %d</item>
+    </plurals>
+    <plurals name="usage_remain_about_hour">
+        <item quantity="other">≈minti %s</item>
+        <item quantity="one">≈awa %s</item>
+    </plurals>
+    <plurals name="usage_remain_about_miunte">
+        <item quantity="other">≈mintuna %s</item>
+        <item quantity="one">≈minti %s</item>
+    </plurals>
+    <plurals name="usage_state_device_explain_today">
+        <item quantity="other">An bude sau %d</item>
+        <item quantity="one">An bude sau %d</item>
+    </plurals>
+    <plurals name="usage_state_device_explain_week">
+        <item quantity="other">An bude sau %d</item>
+        <item quantity="one">An bude sau %d</item>
+    </plurals>
+    <plurals name="usage_state_device_noti_explain_today">
+        <item quantity="other">An karbi sanarwa %d</item>
+        <item quantity="one">An karbi sanarwa %d</item>
+    </plurals>
+    <plurals name="usage_state_device_noti_explain_week">
+        <item quantity="other">An karbi sanarwa %d</item>
+        <item quantity="one">An karbi sanarwa %d</item>
+    </plurals>
+    <plurals name="usage_state_focus_usage_summary">
+        <item quantity="other">Minti %d babban mataki ne game cikakken hankali da sa hankali.</item>
+        <item quantity="one">Minti %d babban mataki ne game cikakken hankali da sa hankali.</item>
+    </plurals>
+    <plurals name="usage_state_hour">
+        <item quantity="other">awowi %d</item>
+        <item quantity="one">awa %d</item>
+    </plurals>
+    <plurals name="usage_state_hour24">
+        <item quantity="other">awowi %d</item>
+        <item quantity="one">awa %d</item>
+    </plurals>
+    <plurals name="usage_state_hour_text">
+        <item quantity="other">"awowi  "</item>
+        <item quantity="one">"awa  "</item>
+    </plurals>
+    <plurals name="usage_state_minute">
+        <item quantity="other">min %d</item>
+        <item quantity="one">min %d</item>
+    </plurals>
+    <plurals name="usage_state_miunte_text">
+        <item quantity="other">"mintuna "</item>
+        <item quantity="one">"minti  "</item>
+    </plurals>
+    <plurals name="usage_state_noti_count">
+        <item quantity="other">Sanarwa %d</item>
+        <item quantity="one">Sanarwa %d</item>
+    </plurals>
+    <plurals name="usage_state_unlock_count">
+        <item quantity="other">Sau %d</item>
+        <item quantity="one">Sau %d</item>
+    </plurals>
+    <plurals name="usage_state_week_day_hour">
+        <item quantity="other">Ƙarshen mako: awowi %d</item>
+        <item quantity="one">Ƙarshen mako: awa %d</item>
+    </plurals>
+    <plurals name="usage_state_week_day_minute">
+        <item quantity="other">Ƙarshen mako: mintuna %d</item>
+        <item quantity="one">Ƙarshen mako: minti %d</item>
+    </plurals>
+    <plurals name="usage_state_work_day_hour">
+        <item quantity="other">Ranakun aiki: awowi %d</item>
+        <item quantity="one">Ranakun aiki: awa %d</item>
+    </plurals>
+    <plurals name="usage_state_work_day_minute">
+        <item quantity="other">Ranakun aiki: mintuna %d</item>
+        <item quantity="one">Ranakun aiki: minti %d</item>
+    </plurals>
+    <plurals name="usage_stats_remain_hour">
+        <item quantity="other">awowi %s</item>
+        <item quantity="one">awa %s</item>
+    </plurals>
+    <plurals name="usage_stats_remain_miunte">
+        <item quantity="other">mintuna %s</item>
+        <item quantity="one">minti %s</item>
+    </plurals>
+    <plurals name="usagestats_device_notification_des_hour">
+        <item quantity="other">"awowi  "</item>
+        <item quantity="one">"awa  "</item>
+    </plurals>
+    <plurals name="usagestats_device_notification_des_min">
+        <item quantity="other">"mintuna "</item>
+        <item quantity="one">"minti  "</item>
+    </plurals>
+</resources>

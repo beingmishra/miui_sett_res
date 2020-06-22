@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="200.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <miui.widget.StateEditText
+        android:id="@id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="3"
+        android:inputType="number"
+        android:textDirection="ltr"
+        android:textAlignment="viewStart" />
+    <TextView
+        android:textSize="14.5sp"
+        android:textColor="@color/timer_add_dialog_illegal_red"
+        android:id="@id/illegalTip"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12.0dip" />
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="29.0dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textSize="17.5sp"
+            android:textStyle="bold"
+            android:textColor="@color/transparent_80_balck"
+            android:id="@id/dialog_btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/screen_cancel"
+            android:layout_weight="1.0" />
+        <Space
+            android:layout_width="14.5dip"
+            android:layout_height="51.0dip" />
+        <Button
+            android:textSize="17.5sp"
+            android:textStyle="bold"
+            android:textColor="@color/cu_text_blue"
+            android:id="@id/dialog_btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cu_confirm"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="29.0dip" />
+</LinearLayout>

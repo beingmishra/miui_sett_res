@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="12.001099dip"
+    android:width="35.669983dip"
+    android:viewportWidth="107.0"
+    android:viewportHeight="36.0"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="@drawable/$ic_logo__0"
+        android:pathData="M18.883,25.576L28.936,14.873V36H36V0H34.098L17.932,15.984L1.902,0H0V36H7.064V14.873L17.389,25.576H18.883ZM44,0H52V36H44V0ZM59,0V20.242C59,29.343 65.233,36 75.208,36C85.182,36 91,29.343 91,20.242V0H83.797V20.105C83.797,25.132 81.164,29.072 75.208,29.072C69.251,29.072 66.342,24.86 66.342,20.105V0H59ZM107,0H99V36H107V0Z"
+        android:fillType="evenOdd" />
+</vector>

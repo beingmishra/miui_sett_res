@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="110.0dip"
+    android:width="110.0dip"
+    android:viewportWidth="110.0"
+    android:viewportHeight="110.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,0h110v110h-110z" />
+    <path
+        android:fillColor="#fffafafa"
+        android:pathData="M24,0.5L86,0.5A23.5,23.5 0,0 1,109.5 24L109.5,86A23.5,23.5 0,0 1,86 109.5L24,109.5A23.5,23.5 0,0 1,0.5 86L0.5,24A23.5,23.5 0,0 1,24 0.5z"
+        android:strokeColor="#ffeeeeee"
+        android:strokeWidth="1.0" />
+    <path
+        android:fillColor="@drawable/$ic_usagestats_app_category_miui_shopping__0"
+        android:pathData="M33.709,32.3H77.033C78.776,32.3 80.213,33.667 80.301,35.408L82.689,82.63C82.826,85.338 80.742,87.644 78.034,87.781C77.952,87.785 77.869,87.787 77.786,87.787H32.956C30.245,87.787 28.047,85.589 28.047,82.878C28.047,82.795 28.049,82.713 28.053,82.63L30.441,35.408C30.529,33.667 31.966,32.3 33.709,32.3Z"
+        android:fillType="evenOdd" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M45.382,48.345C45.382,53.883 49.871,58.372 55.41,58.372C60.948,58.372 65.437,53.883 65.437,48.345"
+        android:strokeColor="#ffffffff"
+        android:strokeWidth="6.0"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.8"
+        android:fillAlpha="0.8" />
+    <path
+        android:fillColor="#ffff7456"
+        android:pathData="M46.064,22.273C49.979,22.273 53.334,24.674 54.736,28.083C54.964,28.055 55.199,28.04 55.436,28.04C57.28,28.04 58.922,28.906 59.978,30.252C61.216,28.07 63.561,26.598 66.25,26.598C70.232,26.598 73.46,29.826 73.46,33.808C73.46,37.79 70.232,41.017 66.25,41.017C63.561,41.017 61.216,39.545 59.977,37.363C58.922,38.71 57.28,39.575 55.436,39.575C54.277,39.575 53.198,39.234 52.295,38.646C50.639,40.121 48.456,41.017 46.064,41.017C40.888,41.017 36.691,36.821 36.691,31.645C36.691,26.469 40.888,22.273 46.064,22.273Z"
+        android:fillType="evenOdd" />
+</vector>

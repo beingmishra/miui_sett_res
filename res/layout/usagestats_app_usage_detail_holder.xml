@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/iv_detail_icon"
+        android:layout_width="@dimen/usage_detail_icon_wh"
+        android:layout_height="@dimen/usage_detail_icon_wh"
+        android:layout_marginTop="@dimen/usage_detail_icon_margin_top" />
+    <TextView
+        android:textSize="@dimen/usage_stats_detail_name_text_size"
+        android:textColor="@color/usage_state_black"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textColor="@color/usage_stats_black40"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/id_app_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.5dip" />
+    <View
+        android:id="@id/id_divide_line"
+        android:background="@color/usage_stats_black10"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.70000005dip"
+        android:layout_marginTop="@dimen/usage_detail_divide_top"
+        android:layout_marginBottom="@dimen/usage_detail_icon_wh"
+        android:layout_marginStart="@dimen/usage_main_left"
+        android:layout_marginEnd="@dimen/usage_main_left" />
+    <View
+        android:id="@id/id_divide_line1"
+        android:background="@color/usage_stats_black10"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/usage_stats_divide_line_height"
+        android:layout_marginTop="@dimen/usage_stats_divide_margin_height"
+        android:layout_marginBottom="@dimen/usage_stats_app_usage_list_title_margin_top" />
+    <TextView
+        android:textSize="@dimen/usage_state_text_size70"
+        android:textColor="@color/usage_stats_black90"
+        android:id="@id/id_usage_time_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usage_state_today_total_text"
+        android:layout_marginStart="@dimen/usage_category_bar_left" />
+    <TextView
+        android:textSize="@dimen/usage_state_text_size70"
+        android:textColor="@color/usage_stats_black90"
+        android:id="@id/id_usage_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/usage_category_bar_left" />
+    <com.xiaomi.misettings.usagestats.widget.NewBarChartView
+        android:id="@id/bar_app_usage_detail"
+        android:paddingBottom="@dimen/usage_stats_detail_bar_padding_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/usage_stats_detail_bar_view_height"
+        android:layout_marginStart="@dimen/usage_category_bar_left"
+        android:layout_marginEnd="@dimen/usage_category_bar_left" />
+</LinearLayout>

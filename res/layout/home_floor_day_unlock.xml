@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="19.629974sp"
+        android:textColor="@color/usage_stats_black90"
+        android:id="@id/tv_total_unlock_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:fontFamily="mipro-medium"
+        android:layout_marginStart="29.089996dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/id_detail_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0899963dip"
+        android:layout_marginStart="29.089996dip"
+        android:layout_marginEnd="29.089996dip">
+        <TextView
+            android:id="@id/tv_unlock_info_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            style="" />
+        <TextView
+            android:id="@id/tv_unlock_info_detail_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginStart="10.899994dip"
+            style="" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/usage_new_home_tip_bar_view_height"
+        android:layout_marginTop="14.549988dip">
+        <View
+            android:id="@id/id_relate_view"
+            android:background="@android:color/transparent"
+            android:layout_width="1.0px"
+            android:layout_height="1.0px"
+            android:layout_marginTop="@dimen/usage_new_home_tip_bar_relate_view_margin_top" />
+        <com.xiaomi.misettings.usagestats.widget.NewBarChartView
+            android:id="@id/id_bar_unlock_day"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usage_new_home_tip_bar_view_height"
+            android:paddingStart="29.089996dip"
+            android:paddingEnd="29.089996dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight=""
+    android:paddingStart="@dimen/preference_item_padding_start"
+    android:paddingEnd="@dimen/preference_item_padding_end"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miui="http://schemas.android.com/apk/res/miui">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/preference_text_size"
+            android:ellipsize="marquee"
+            android:id="@android:id/title"
+            android:fadingEdge="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingStart="3.6299744dip" />
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="10.709991dip" />
+        <miui.widget.SeekBar
+            android:id="@id/seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/multi_gradient_bg"
+            android:thumb="@drawable/seekbar_thumb_customer" />
+    </LinearLayout>
+</LinearLayout>

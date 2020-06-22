@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="29.089996sp"
+        android:textColor="@color/usage_stats_black90"
+        android:id="@id/id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.72dip"
+        android:includeFontPadding="false"
+        android:fontFamily="mipro-medium"
+        android:layout_marginStart="29.089996dip" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/id_summary_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0999756dip"
+        android:layout_marginStart="29.089996dip">
+        <TextView
+            android:textSize="14.539978sp"
+            android:textColor="@color/usage_stats_black40"
+            android:id="@id/id_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:fontFamily="mipro-regular" />
+        <TextView
+            android:textSize="14.539978sp"
+            android:textColor="@color/usage_stats_black40"
+            android:id="@id/id_summary_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="mipro-regular"
+            android:layout_marginStart="5.0999756dip" />
+    </LinearLayout>
+    <com.xiaomi.misettings.usagestats.widget.NewBarChartView
+        android:id="@id/id_bar_every_day"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/usage_new_home_no_tip_bar_view_height"
+        android:layout_marginTop="50.899994dip"
+        android:paddingStart="27.269989dip"
+        android:paddingEnd="27.269989dip" />
+    <com.xiaomi.misettings.usagestats.widget.NewBarChartView
+        android:id="@id/id_bar_current_day"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/usage_new_home_tip_bar_view_height"
+        android:layout_marginTop="14.549988dip"
+        android:paddingStart="29.089996dip"
+        android:paddingEnd="29.089996dip" />
+</LinearLayout>
